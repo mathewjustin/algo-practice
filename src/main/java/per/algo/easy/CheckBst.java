@@ -7,14 +7,14 @@ public class CheckBst {
         Node left;
         Node right;
     }
-//2 solution can be found on O(n)
+    //2 solution can be found on O(n)
     //1. range based minus infy and positive infy, or inorder traversal expect sorted output
     //This solution is based on range
     boolean checkBST(Node root) {
         return checkBST(root, null,null);
      }
 
-     boolean checkBST(Node root, Integer min ,Integer max )
+    boolean checkBST(Node root, Integer min ,Integer max )
     {
         if(root==null)
             return true;
